@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/g1">
+        <item android:id="@+id/one" android:title="Github" android:icon="@drawable/menu_up_arrow"/>
+        <item android:id="@+id/two" android:title="CSDN" android:icon="@drawable/cahao"/>
+        <item android:id="@+id/three" android:title="简书" android:icon="@drawable/favourite"/>
+        <item android:id="@+id/four" android:title="github.io" android:icon="@drawable/home_classify_01"/>
+    </group>
+    <group
+        android:id="@+id/g2">
+        <item android:id="@+id/five" android:title="设置" android:icon="@drawable/home_classify_04"/>
+        <item android:id="@+id/six" android:title="关于" android:icon="@drawable/menu_info"/>
+        <item android:id="@+id/seven" android:title="清除缓存" android:icon="@drawable/pingpp_baidupay"/>
+
+    </group>
+
+</menu>
