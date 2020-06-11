@@ -1,0 +1,2 @@
+include ':app', ':RecyclerAdapterHelper', ':everyclass', ':aidl_client', ':aidl_server', ':threraddemo'
+rootProject.name='WanNengAdapter'
