@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/group1_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="年级"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:id="@+id/group1"
+        app:layout_constraintTop_toBottomOf="@+id/group1_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/chuyi"
+            android:text="初一"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:button=" @null"
+            android:layout_width="78dp"
+            android:layout_height="30dp"/>
+        <RadioButton
+            android:text="初二"
+            android:layout_marginLeft="5dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:button=" @null"
+            android:layout_width="78dp"
+            android:layout_height="30dp"/>
+        <RadioButton
+            android:text="初三"
+            android:layout_marginLeft="5dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:button=" @null"
+            android:layout_width="78dp"
+            android:layout_height="30dp"/>
+        <RadioButton
+            android:text="高二"
+            android:layout_marginLeft="5dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:button=" @null"
+            android:layout_width="78dp"
+            android:layout_height="30dp"/>
+        <RadioButton
+            android:text="高三"
+            android:layout_marginLeft="5dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:button=" @null"
+            android:layout_width="78dp"
+            android:layout_height="30dp"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/group2_name"
+        app:layout_constraintTop_toBottomOf="@+id/group1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="学科"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:id="@+id/group2"
+        app:layout_constraintTop_toBottomOf="@+id/group2_name"
+        android:transitionName="学科"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:text="语文"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:button=" @null"
+            android:layout_width="78dp"
+            android:layout_height="30dp"/>
+        <RadioButton
+            android:text="数学"
+            android:layout_marginLeft="5dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:button=" @null"
+            android:layout_width="78dp"
+            android:layout_height="30dp"/>
+        <RadioButton
+            android:text="英语"
+            android:layout_marginLeft="5dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:button=" @null"
+            android:layout_width="78dp"
+            android:layout_height="30dp"/>
+        <RadioButton
+            android:text="物理"
+            android:layout_marginLeft="5dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:button=" @null"
+            android:layout_width="78dp"
+            android:layout_height="30dp"/>
+        <RadioButton
+            android:text="化学"
+            android:layout_marginLeft="5dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:button=" @null"
+            android:layout_width="78dp"
+            android:layout_height="30dp"/>
+    </RadioGroup>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toBottomOf="@+id/group2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <Button
+        android:id="@+id/reset"
+            app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/confirm"
+            android:text="重置"
+            android:textSize="25sp"
+        android:background="@drawable/reset_shap"
+        android:layout_width="188dp"
+        android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/confirm"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/reset"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="确定"
+            android:textSize="25sp"
+            android:background="@drawable/confirm_shap"
+            android:layout_width="0dp"
+            android:layout_height="50dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

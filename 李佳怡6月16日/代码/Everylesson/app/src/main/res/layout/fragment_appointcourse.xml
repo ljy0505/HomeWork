@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/class_list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="152dp"
+        android:layout_marginRight="153dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="约课记录" />
+    <ImageView
+        android:id="@+id/common_back_icon"
+        android:src="@drawable/common_back_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="351dp"
+        android:layout_marginTop="14dp"
+        android:layout_width="9dp"
+        android:layout_height="16dp"
+        />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/course_tab"
+        app:layout_constraintTop_toBottomOf="@+id/class_list"
+        app:layout_constraintBottom_toTopOf="@+id/course_frag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <FrameLayout
+        android:id="@+id/course_frag"
+        app:layout_constraintTop_toBottomOf="@+id/course_tab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
